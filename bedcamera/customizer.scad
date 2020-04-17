@@ -9,7 +9,7 @@ cnf_part = "all"; // [camera:Camera Body, lid:Camera Lid, post:Camera Post, arm:
 cnf_lidscrew = 1; // [0: no, 1: yes]
 
 // Do you want to flip the camera and have the cable at the bottom?
-cnf_flip = 0; // [0: no, 1: yes]
+cnf_flip = 1; // [0: no, 1: yes]
 
 /* [Bed Mounting Arm] */
 
@@ -17,7 +17,7 @@ cnf_flip = 0; // [0: no, 1: yes]
 cnf_armtype = "mk3"; // [mk3:Prusa MK3]
 
 // Length of the arm from the mount (mm)
-cnf_armlength = 80;
+cnf_armlength = sqrt(60*60 + 60*60); // maybe subtract 1/4 to 1/2 inch?
 
 // Rotation of the arm (deg)
 cnf_armrotation = 0; // [-45:45]
