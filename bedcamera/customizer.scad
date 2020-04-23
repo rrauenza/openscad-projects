@@ -17,7 +17,9 @@ cnf_flip = 1; // [0: no, 1: yes]
 cnf_armtype = "mk3"; // [mk3:Prusa MK3]
 
 // Length of the arm from the mount (mm)
-cnf_armlength = sqrt(60*60 + 60*60); // maybe subtract 1/4 to 1/2 inch?
+//x_distance = 60;  // maybe 1/4" to 1/2" shorter?
+x_distance = 50;
+cnf_armlength = sqrt(x_distance * x_distance + x_distance * x_distance);
 
 // Rotation of the arm (deg)
 cnf_armrotation = 0; // [-45:45]
@@ -25,7 +27,8 @@ cnf_armrotation = 0; // [-45:45]
 /* [Camera Post] */
 
 // height of the camera post (mm)
-cnf_postheight = 26;
+// was 26
+cnf_postheight = 20;
 
 /* [Advanced] */
 
